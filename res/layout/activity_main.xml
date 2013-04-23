@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    tools:context=".EverydayTaskMain" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/SmallFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="タスク名"
+            android:textColor="#969696" />
+
+        <TextView
+            android:id="@+id/text_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            style="@style/SmallFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="実行時間"
+            android:textColor="#969696" />
+
+        <Chronometer
+            android:id="@+id/chrono_runtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:text="Chronometer"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            style="@style/SmallFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="累計時間"
+            android:textColor="#969696" />
+
+        <TextView
+            android:id="@+id/text_totaltime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:text="0"
+            android:textColor="#0087BB"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/SmallFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="回数"
+                    android:textColor="#969696" />
+
+                <TextView
+                    android:id="@+id/text_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:text="0"
+                    android:textColor="#0087BB"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/SmallFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="平均時間"
+                    android:textColor="#969696" />
+
+                <TextView
+                    android:id="@+id/text_meantime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:text="0"
+                    android:textColor="#0087BB"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <Button
+            android:id="@+id/button_run"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="開始" />
+        
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/fling"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_rename"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100"
+        android:title="タスク名変更"/>
+    <item
+        android:id="@+id/item_list"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="101"
+        android:title="一覧"/>
+    <item
+        android:id="@+id/item_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="102"
+        android:title="削除"/>
+    <item
+        android:id="@+id/item_credit"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="103"
+        android:title="クレジット"/>
+
+</menu>
